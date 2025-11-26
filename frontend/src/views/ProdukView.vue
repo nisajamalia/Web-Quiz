@@ -202,7 +202,8 @@ export default {
       this.error = null;
       
       try {
-        const response = await axios.post('http://localhost:8000/api/produk/list', {
+        // Use relative URL so Vite dev server proxy forwards to Laravel backend
+        const response = await axios.post('/api/produk/list', {
           keyword: this.keyword,
           sort_by: this.sortBy,
           sort_dir: this.sortDir,
