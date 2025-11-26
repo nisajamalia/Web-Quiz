@@ -1,0 +1,33 @@
+{
+  "name": "product-list-fullstack",
+  "version": "1.0.0",
+  "description": "Product List Application with Laravel Backend and Vue.js Frontend",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ezrelafidelynn/ProductList"
+  },
+  "keywords": [
+    "laravel",
+    "vue",
+    "vuejs",
+    "php",
+    "mysql",
+    "pagination",
+    "filtering",
+    "sorting",
+    "rest-api",
+    "fullstack"
+  ],
+  "author": "ezrelafidelynn",
+  "license": "MIT",
+  "scripts": {
+    "setup": "cd backend && composer install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && php artisan serve",
+    "dev:frontend": "cd frontend && npm run dev",
+    "test:api": "curl -X POST http://localhost:8000/api/produk/list -H \"Content-Type: application/json\" -d \"{\\\"start\\\": 0, \\\"limit\\\": 10}\""
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}

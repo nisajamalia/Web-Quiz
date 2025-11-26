@@ -1,0 +1,17 @@
+# Laravel backend
+backend/** linguist-language=PHP
+backend/resources/js/** linguist-language=JavaScript
+backend/resources/css/** linguist-language=CSS
+
+# Vue.js frontend
+frontend/** linguist-language=Vue
+frontend/src/** linguist-language=Vue
+frontend/src/**/*.js linguist-language=JavaScript
+frontend/src/**/*.vue linguist-language=Vue
+
+# Vendor directories (exclude from language stats)
+backend/vendor/** linguist-vendored
+frontend/node_modules/** linguist-vendored
+
+# Documentation
+*.md linguist-documentation
