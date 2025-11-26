@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('kategori', 100);
             $table->integer('harga');
             $table->integer('stok');
-            $table->timestamp('created_at')->useCurrent();
+            $table->timestamps();
         });
     }
 
